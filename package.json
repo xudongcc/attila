@@ -90,6 +90,10 @@
         ],
         "default": "Default",
         "group": "post"
+      },
+      "icp": {
+        "type": "text",
+        "default": ""
       }
     }
   },

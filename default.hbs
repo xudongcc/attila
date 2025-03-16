@@ -95,7 +95,7 @@
 				<nav class="nav-wrapper" aria-label="{{t "Footer"}}">
 					<span class="nav-copy">
 						
-						<span class="nav-title">{{@site.title}} &copy; {{date format='YYYY'}}</span>
+						<span class="nav-title">{{@site.title}} &copy; {{date format='YYYY'}}{{#if @custom.icp}} &bull; <a href="https://beian.miit.gov.cn" target="_blank" rel="nofollow noopener noreferrer">{{@custom.icp}}</a>{{/if}}</span>
 						<a aria-label="RSS" href="{{@site.url}}/rss/" title="RSS"><i class="icon icon-rss" aria-hidden="true">{{> "icons/icon-rss"}}</i></a>
 						{{#if @site.twitter}}<a aria-label="Twitter" href="{{twitter_url}}" title="{{@site.twitter}}"><i class="icon icon-twitter" aria-hidden="true">{{> "icons/icon-twitter"}}</i></a>{{/if}}
 						{{#if @site.facebook}}<a aria-label="Facebook" href="{{facebook_url}}" title="{{@site.facebook}}"><i class="icon icon-facebook" aria-hidden="true">{{> "icons/icon-facebook"}}</i></a>{{/if}}
@@ -103,7 +103,7 @@
 					{{#if @site.secondary_navigation}}
 					{{navigation type="secondary"}}
 					{{/if}}
-					<span class="nav-credits">{{t "Published with"}} <a href="https://ghost.org">Ghost</a> &bull; {{t "Theme" }} <a href="https://github.com/zutrinken/attila">Attila</a> &bull; <a class="menu-item js-theme" href="#" data-system="System theme" data-dark="Dark theme" data-light="Light theme"><span class="theme-icon"></span><span class="theme-text">System theme</span> </a> </span>
+					<span class="nav-credits">{{t "Published with"}} <a href="https://ghost.org" target="_blank" rel="noopener noreferrer">Ghost</a> &bull; {{t "Theme" }} <a href="https://github.com/zutrinken/attila" target="_blank" rel="noopener noreferrer">Attila</a> &bull; <a class="menu-item js-theme" href="#" data-system="System theme" data-dark="Dark theme" data-light="Light theme"><span class="theme-icon"></span><span class="theme-text">System theme</span></a></span>
 				</nav>
 			</div>
 
