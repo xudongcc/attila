@@ -27,6 +27,6 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: theme-package
-          path: dist/*.zip
+          name: attila.zip
+          path: dist/attila.zip
           retention-days: 7
